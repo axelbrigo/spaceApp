@@ -1,0 +1,371 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:  "Mohave", sans-serif;
+  font-size: 18px;
+}
+
+h1,
+h2 {
+  font-family: 'Zen Antique', sans-serif;
+ 
+}
+
+a{
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button, img {
+  user-select:none;
+}
+
+p {
+  line-height:1.8;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 7px;
+  display: flex;
+width: 100%;
+  justify-content: space-between;
+}
+
+.navbar {
+  position: absolute;
+  background-color: #fff;
+  width: 80%;
+  top: -1000%;
+  left: 50%;
+  padding: 20px; 
+  transform: translate(-50%);
+  transition: top 0.5s ease-in-out;
+  text-align: center;
+}
+
+.navbar.open {
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar ul li {
+  margin: 40px 0;
+  list-style: none;
+}
+
+.navbar ul li a{
+  color: black;
+}
+
+.home {
+  background-image: url('./assets/background-home-mobile.jpg') ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  padding: 30px;
+ 
+}
+
+.technology__background {
+    background-image: url('./starter-code/assets/technology/background-technology-mobile.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    padding: 30px;
+}
+
+.crew__background {
+  background-image: url('./starter-code/assets/crew/background-crew-mobile.jpg') ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  padding: 30px;
+}
+
+
+ .overlay {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ justify-content: space-around;
+  height: 100vh;
+  padding-top: 90px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.text-2xl {
+  color: rgb(199, 199, 199);
+  font-size: 2em;
+}
+
+.span__space {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.5em;
+  color: white;
+}
+
+.text__home {
+  color: rgb(199, 199, 199);
+}
+.main__buton--section {
+  margin-top: 30px;
+}
+
+.main__button {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5em;
+  border:none;
+  box-shadow: 0 0 0 rgba(255,255,255, 0.9);
+  animation: pulse 2s infinite;
+  
+}
+
+@-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+
+
+.main__button a {
+  color: rgb(0, 0, 83);
+  opacity: 0.8;
+}
+
+.button__icon {
+  background-color: transparent;
+  border: none;
+}
+.menu__icon {
+width: 40px;
+height: 40px;
+color: white;
+}
+
+
+
+.destination {
+  background: url('./starter-code/assets/home/background-home-mobile.jpg') no-repeat center/cover;
+}
+
+
+.destination_planets h2 {
+  color: white;
+  padding-top: 30px;
+}
+
+.buttons__planets {
+  display: flex;
+}
+
+.buttons__planets li {
+  list-style: none;
+  padding-left: 7px;
+}
+.second__article button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 5px;
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+.second__article {
+  text-align: center;
+  margin: auto;
+ }
+ 
+ .tittle_planets {
+   margin-top: 30px;
+   color: white;  
+ }
+
+ .text_planets {
+   color: white;
+ }
+
+ .role__styles {
+   color:white
+ }
+
+ .avg__distance{
+   color: rgb(255, 43, 43);
+   list-style: none;
+   font-size: 1.2em;
+ }
+ .est__distance{
+  color: rgb(255, 43, 43);
+  list-style: none;
+  font-size: 1.2em;
+ }
+
+ .destination__technology {
+  width: 70%;
+  margin-top: 130px;
+  padding-left: 100px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+ }
+
+ .destination__technology h2 {
+color: white;
+padding-bottom: 40px;
+margin: auto;
+
+ }
+
+ .technology__tittle {
+   width: 80%;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   margin: auto;
+   flex-direction: column;
+ }
+
+ .technology__tittle h2 {
+  color: white;
+  padding-top: 50px;
+}
+
+ .picture__technology {
+   width: 70%;
+   margin: auto;
+   margin-top: 100px;
+ }
+
+ .picture__technology img {
+   width: 100%;
+ }
+
+
+ @media (min-width: 720px) {
+   .home {
+     background-image: url('./starter-code/assets/destination/background-destination-tablet.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 100%;
+    min-width: 100vh;
+   }
+
+   .technology__background {
+    background-image: url('./starter-code/assets/technology/background-technology-tablet.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    padding: 30px;
+    padding-top: 100px;
+  }
+ }
+
+ .role__styles {
+   color: gray;
+ }
+
+
+@media (min-width: 1024px) {
+  .home {
+    background-image: url('./starter-code/assets/destination/background-destination-desktop.jpg');
+    height: 100%;
+    min-width: 100vh;
+   
+  }
+
+  .technology__background {
+      background-image: url('./starter-code/assets/technology/background-technology-desktop.jpg') ;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      min-height: 100vh;
+      width: 100%;
+      padding: 30px;
+  }
+
+  .crew__background{
+    background-image: url('./starter-code/assets/crew/background-crew-desktop.jpg');
+    height: 100%;
+    min-width: 100vh;
+  }
+
+  .destinations-flex {
+    display: flex;
+    height: 100%;
+    min-height: 100vh;
+    text-align: center;
+  }
+
+  .destination_planets {
+    width: 50%;
+  }
+
+  .destination_planets h2 {
+    margin-bottom: 50px;
+  }
+
+  .second__article {
+    display: flex;
+    flex-direction: column;
+text-align: left;
+margin-left: 100px;
+  }
+
+  .tittle_planets {
+    font-size: 3em;
+  }
+
+  .text_planets {
+    border-bottom: 1px solid white;
+    color: gray;
+  }
+  .list_planets {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+  }
+
+  .avg__distance {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: white;
+  }
+
+  .est__distance {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: white;
+  }
+}
+
+
+
